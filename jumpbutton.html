@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test for jump button</title>
+</head>
+<body>
+	<h1 style="text-align: center;"> To check if everything is working properly, click on the button below and verify that the TRex is jumping </h1>
+	<button style="width: 100%; height: 100px;" onclick="jump()">Jump!</button>
+	<script type="text/javascript">
+		function jump() {
+			var xmlHttp = new XMLHttpRequest();
+			xmlHttp.open( "GET", '/jump', false ); // false for synchronous request
+			xmlHttp.send( null );
+			console.log(xmlHttp.responseText);
+		}
+	</script>
+</body>
+</html>
