@@ -5,7 +5,7 @@ This repo is a part of the Software for Portable Devices (CS F314) course. In th
 # Setup
 
 1. Install node.js (v6.x.x LTS) from https://nodejs.org/en/
-2. npm should also have been installed. Run `npm install npm@latest -g` to update npm to the latest version.
+2. npm should also have been installed. Run `npm install npm@latest -g` to update npm to the latest version. If you get an error, try `sudo npm install npm@latest -g`.
 3. Run `git clone https://github.com/thepulkitagarwal/sdpd-t-rex-runner.git` or download a zip of this repository.
 4. `cd` into the local copy of this repo on your terminal.
 5. Run `npm install`.
