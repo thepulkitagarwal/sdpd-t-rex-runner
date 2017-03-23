@@ -1,6 +1,6 @@
 # python 2
-from urllib2 import urlopen
 from __future__ import print_function
+from urllib2 import urlopen
 
 # python 3
 # from urllib.request import urlopen
