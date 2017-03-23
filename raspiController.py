@@ -1,8 +1,13 @@
-import urllib2
+# python 2
+from urllib2 import urlopen
+from __future__ import print_function
 
-def jump():
-	content = urllib2.urlopen('http://localhost:3000/jump').read()
-	print content
+# python 3
+# from urllib.request import urlopen
+
+def jump(ip='localhost'):
+	content = urlopen('http://' + ip + ':3000/jump').read()
+	print(content)
 
 def testjump():
 	import threading
