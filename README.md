@@ -10,7 +10,7 @@ This repo is a part of the Software for Portable Devices (CS F314) course. In th
 4. `cd` into the local copy of this repo on your terminal.
 5. Run `npm install`. (Note: `npm warn` is not a problem. You can go ahead with the next step.)
 6. Run `npm start`.
-7. Open a separate terminal, `cd` into the local copy of this repo, and run `python raspiController.py`.
+7. Open a separate terminal, `cd` into the local copy of this repo, and run `python raspiController.py`. (You might have a problem if you are using python3. In that case, comment out the python 2 libraries, and uncomment the python 3 libraries in the `raspiController.py` file.)
 8. Open your browser and go to <http://localhost:3000> and press space.
 9. The TRex should automatically jump every 0.5 seconds.
 
@@ -18,13 +18,13 @@ Now you can make changes in the `raspiController.py` file to interface to the ra
 
 # What you have to do
 
-You will copy the `raspiController.py` file to the raspberry pi provided and change [this line](https://github.com/thepulkitagarwal/sdpd-t-rex-runner/blob/master/raspiController.py#L4) to correspond to the IP address of your PC and the port the node.js server is running on (by default it is 3000, unless you make changes to any other files).
+You will copy the `raspiController.py` file to the raspberry pi provided.
 
 As stated earlier, the aim is to make the TRex jump based on the GPIO pin inputs from the raspberry pi.
 
 Setup the hardware as required. Be extremely careful not to damage any of the devices.
 
-Use the `jump()` function call to send a request to the server to make the TRex jump, whenever the GPIO Pins have the correct signal.
+Use the `jump()` function call to send a request to the server to make the TRex jump, whenever the GPIO Pins have the correct signal. You should provide the IP address of your laptop (on which the node.js server is running) in the `jump()` function call. For instance, if the IP address is `10.42.0.100` do `jump('10.42.0.100')`.
 
 # Introduction to GPIO Pins in the Raspberry Pi
 
